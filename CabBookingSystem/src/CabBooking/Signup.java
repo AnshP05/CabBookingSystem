@@ -61,7 +61,7 @@ public class Signup extends JFrame implements ActionListener {
         lblSecurityQuestion.setBounds(99, 197, 140, 26);
         contentPane.add(lblSecurityQuestion);
 
-        ImageIcon c1 = new ImageIcon(ClassLoader.getSystemResource("signup.png"));
+        ImageIcon c1 = new ImageIcon(ClassLoader.getSystemResource("icon/signup.png"));
         Image i1 = c1.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
         ImageIcon i2 = new ImageIcon(i1);
 
@@ -130,7 +130,7 @@ public class Signup extends JFrame implements ActionListener {
             }
             if(ae.getSource() == b2){
                 this.setVisible(false);
-                new Login.setVisible(true);
+                new Login().setVisible(true);
             }
         } catch(Exception e){
             System.out.println(e);
