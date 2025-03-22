@@ -1,4 +1,4 @@
-package CabBookingSystem;
+package CabBooking;
 
 import java.awt.*;
 import javax.swing.*;
@@ -13,9 +13,6 @@ public class Signup extends JFrame implements ActionListener {
     private JButton b1, b2;
     private JComboBox comboBox;
 
-    public static void main(String[] args){
-        new Signup().setVisible(true);
-    }
     
     @SuppressWarnings({ "rawtypes", "unchecked" })
     public Signup(){
@@ -135,5 +132,8 @@ public class Signup extends JFrame implements ActionListener {
         } catch(Exception e){
             System.out.println(e);
         }
+    }
+    public static void main(String[] args){
+        new Signup().setVisible(true);
     }
 }

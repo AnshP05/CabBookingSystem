@@ -1,4 +1,4 @@
-package CabBookingSystem;
+package CabBooking;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -21,11 +21,12 @@ public class Login extends JFrame implements ActionListener {
         ImageIcon c1 = new ImageIcon(ClassLoader.getSystemResource("icon/login.jpg"));
         Image i1 = c1.getImage().getScaledInstance(700, 700, Image.SCALE_DEFAULT);
         ImageIcon i2 = new ImageIcon(i1);
-
+        
         JLabel l6 = new JLabel(i2);
         l6.setBounds(0, 50, 700, 450);
         add(l6);
 
+        
         JLabel l1 = new JLabel("Username : ");
         l1.setBounds(324, 0, 95, 24);
         l6.add(l1);

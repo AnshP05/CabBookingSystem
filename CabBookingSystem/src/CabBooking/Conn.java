@@ -1,4 +1,4 @@
-package CabBookingSystem;
+package CabBooking;
 
 
 import java.sql.*;
